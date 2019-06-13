@@ -15,7 +15,10 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            app:title="Bullets/Activities"
+
             android:background="?attr/colorPrimary"
+
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
@@ -23,11 +26,28 @@
     <include layout="@layout/content_main" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fabSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_margin="10dp"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/mainSpace"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        app:layout_anchor="@id/fabSearch"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="0dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_anchor="@id/mainSpace"
+        app:layout_anchorGravity="top" />
+
 
 </android.support.design.widget.CoordinatorLayout>
