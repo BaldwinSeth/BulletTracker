@@ -15,11 +15,14 @@ import java.util.List;
 public class BulletAdapter extends RecyclerView.Adapter<BulletAdapter.ViewHolder> {
 
     List<Bullet> bullets;
+    public BulletAdapter(List<Bullet> bullets){
+        this.bullets = bullets;
+    }
 
     @NonNull
     @Override
     public BulletAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i){
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.bulletRow, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.bullet_row, parent, false);
         return new ViewHolder(view);
     }
 
