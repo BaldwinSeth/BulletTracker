@@ -1,4 +1,4 @@
-package com.tests.baldwin.bullettracker;
+package com.tests.baldwin.bullet_tracker;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
