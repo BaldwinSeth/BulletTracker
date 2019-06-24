@@ -51,4 +51,11 @@ public class BulletAdapter extends RecyclerView.Adapter<BulletAdapter.ViewHolder
             Tags = itemView.findViewById(R.id.Tags);
         }
     }
+
+    private void pointlessMethod(int frank, String billy){
+        //this is for example
+
+
+    }
+
 }
